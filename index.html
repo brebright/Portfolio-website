@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">My Portfolio</div>
+        <nav>
+            <ul class="navlist">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div id="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home-section">
+            <div class="home">
+                <div class="cont">
+                    <div class="socials">
+                        <a href="https://www.linkedin.com/in/brhane-gebreslassie-12b5a92a7" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/yourprofile" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://t.me/yourprofile" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                    <div class="text-content">
+                        <h1>Hi, my name is</h1>
+                        <h1 class="name">Brhane Gebreslassie</h1>
+                        <h1>I am a web developer</h1>
+                        <p>Welcome to my portfolio! As a passionate web developer, I create dynamic and user-friendly web applications. I specialize in modern technologies to solve real-world problems.</p>
+                        <p>Explore my projects below, and feel free to connect with me. Let’s turn ideas into reality together!</p>
+                        <a href="img/Udacity Data science certificate.pdf" target="_blank" class="cta-button" download>Download My Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <div class="image-container">
+                    <img src="img/profile.jpg" alt="Profile Picture of Brhane Gebreslassie" class="profile-image">
+                </div>
+                <div class="about-content">
+                    <div class="about-box about-me">
+                        <h2 class="abt">About Me</h2>
+                        <p>I'm a passionate web developer experienced in various technologies, including the MERN stack. My journey into coding began with a fascination for creating interactive web applications.</p>
+                        <h3 class="strong-message">Innovative Solutions for Modern Challenges</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="skills-content">
+                <h2>Skills & Technologies</h2>
+                <p>Here are some of the technologies and tools I’m proficient in:</p>
+                <ul class="skills-list">
+                    <li>MERN Full Stack</li>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Front End React Development</li>
+                    <li>Back End Node.js and Express.js Development</li>
+                    <li>UI/UX Design Principles</li>
+                    <li>Responsive Web Design</li>
+                    <li>Version Control (Git & GitHub)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>My Projects</h2>
+            <p>Here are some of the projects I have worked on...</p>
+            <div class="project-gallery">
+                <div class="slider-controls">
+                    <button id="prev-button">&leftarrow;</button>
+                </div>
+                <div class="project-item active">
+                    <div>
+                        <div class="image-container">
+                            <img src="img/ecommerce.PNG" alt="MERN E-commerce Project">
+                        </div>
+                        <div class="project-desc">
+                            <p>
+                                <strong>MERN E-commerce Project</strong>
+                                <span>Featuring an Admin Panel and Customer Interface</span>
+                            </p>
+                            <p class="project-description">A comprehensive e-commerce platform for managing products and transactions.</p>
+                            <button class="description-button">Show Description</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item active">
+                    <div>
+                        <div class="image-container">
+                            <img src="img/Stopwatch.PNG" alt="Stopwatch Web App">
+                        </div>
+                        <div class="project-desc">
+                            <p>
+                                <strong>Stopwatch Web App</strong>
+                                <span>Simple and Intuitive Time Tracking</span>
+                            </p>
+                            <p class="project-description">An interactive tool for accurate time tracking during activities.</p>
+                            <button class="description-button">Show Description</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button id="next-button">&rightarrow;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <p>If you would like to get in touch, please fill out the form below.</p>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+                <p class="form-feedback"></p> <!-- For feedback messages -->
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/brhane-gebreslassie-12b5a92a7" aria-label="LinkedIn" class="icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" aria-label="Facebook" class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter" class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; <span id="currentDate"></span> My Portfolio. All rights reserved.</p>
+                    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                </div>
+                <div class="up-arrow">
+                    <a href="#home" class="scroll-to-top" aria-label="Back to top">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
