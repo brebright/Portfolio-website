@@ -59,7 +59,7 @@ updateProjectDisplay();
 
 // Initialize EmailJS with your user ID
 (function() {
-    emailjs.init("TFFnjwXF_O03vomrv"); // Replace with your EmailJS user ID
+    emailjs.init("USER ID"); // Replace with your EmailJS user ID
 })();
 
 // Function to send email
@@ -72,7 +72,7 @@ function sendEmail(event) {
         message: document.getElementById("message").value,
     };
 
-    emailjs.send("service_gg2mdml", "template_am5jiu4", templateParams)
+    emailjs.send("serviceid", "template_id", templateParams)
         .then(function(response) {
             console.log("Email sent successfully", response);
         }, function(error) {
